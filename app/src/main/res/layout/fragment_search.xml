@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.fragments.SearchFragment"
+    android:orientation="vertical"
+    android:background="@color/bgMain"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <SearchView
+        android:id="@+id/svSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Enter a Movie/TV Show Name.."
+        android:background="@drawable/drawable_edit_text"
+        android:clickable="true"
+        android:focusable="true"
+        android:iconifiedByDefault="true"
+        android:focusedByDefault="true"/>
+
+    <TextView
+        android:id="@+id/searchAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pureWhite"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search your Movies and TV shows.."
+            android:textColor="@color/pureWhite"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:layout_margin="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

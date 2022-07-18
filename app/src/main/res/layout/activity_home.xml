@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.activities.HomeActivity"
+    android:background="@color/bgMain">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/barColor">
+
+        <TextView
+            android:id="@+id/headerHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie Club"
+            android:textColor="@color/pureWhite"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user_icon"
+            android:layout_alignParentEnd="true"
+            app:riv_border_width="2dp"
+            app:riv_border_color="@color/transparent"
+            app:riv_oval="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/ripple_effect"/>
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/homeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/bottomNavigationMenu"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/barColor"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/bottom_navigation_item_colors"
+        app:itemTextColor="@drawable/bottom_navigation_item_colors"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation_panel"
+        app:itemIconSize="20dp"/>
+
+</RelativeLayout>

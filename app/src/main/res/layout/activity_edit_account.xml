@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.activities.user.EditAccountActivity"
+    android:orientation="vertical"
+    android:background="@color/bgSecondary">
+
+    <include layout="@layout/toolbar_with_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="40dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/pageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Update account"
+                android:textColor="@color/pureWhite"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pageDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Update your personal details"
+                android:textColor="@color/pureWhite"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/etNameU"
+                android:layout_width="match_parent"
+                style="@style/editTextHeight"
+                android:background="@drawable/drawable_edit_text"
+                android:hint="Enter your name.."
+                android:importantForAutofill="no"
+                android:padding="14dp"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etEmailU"
+                android:layout_width="match_parent"
+                style="@style/editTextHeight"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/drawable_edit_text"
+                android:hint="Email your email address.."
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etDateOfBirthU"
+                android:layout_width="match_parent"
+                style="@style/editTextHeight"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/drawable_edit_text"
+                android:hint="Select your Date of Birth.."
+                android:importantForAutofill="no"
+                android:padding="14dp"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:inputType="date" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                style="@style/editTextHeight"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/drawable_edit_text">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:errorEnabled="false"
+                    app:helperTextEnabled="false"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etPasswordU"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:hint="Enter a strong password.."
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        android:padding="14dp"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                style="@style/editTextHeight"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ripple_effect"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/pureWhite" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

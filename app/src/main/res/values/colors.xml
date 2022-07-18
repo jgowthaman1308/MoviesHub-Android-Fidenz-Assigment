@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="colorTitle">#0C274C</color>
+    <color name="pureWhite">#FFFFFF</color>
+    <color name="editTextBorder">#696F74</color>
+    <color name="navigationFontColor">#A8B1CC</color>
+
+    <color name="movieTitle">#000000</color>
+<!--    <color name="btnColor">#ff669900</color>-->
+    <color name="btnColor">@color/barColor</color>
+    <color name="dark_background">#FF424242</color>
+    <color name="bgMain">#546E7A</color>
+    <color name="bgSecondary">#455A64</color>
+    <color name="barColor">#263238</color>
+</resources>

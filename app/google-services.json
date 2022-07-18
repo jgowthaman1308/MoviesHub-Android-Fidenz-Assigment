@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "114941064107",
+    "firebase_url": "https://movieshub-finalassignment.firebaseio.com",
+    "project_id": "movieshub-finalassignment",
+    "storage_bucket": "movieshub-finalassignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114941064107:android:b30f8623fc25248e1f18ee",
+        "android_client_info": {
+          "package_name": "com.example.movieshub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114941064107-rvj4pleo7kgr7u7hv1r38kh2dh0etcud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.movieshub",
+            "certificate_hash": "998384039acede6cafa251503a87dd1a9ae33a01"
+          }
+        },
+        {
+          "client_id": "114941064107-qt840k90c7mn86aa2lv16fk6g685funl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUjsUzdl48ttwUH42-1jr45eN688b1bQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114941064107-qt840k90c7mn86aa2lv16fk6g685funl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

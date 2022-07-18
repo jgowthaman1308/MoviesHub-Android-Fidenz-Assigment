@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@color/bgMain">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/proImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user_icon"
+        app:riv_border_width="3dp"
+        app:riv_border_color="@color/transparent"
+        app:riv_oval="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/proName"
+        android:text="Gowtham"
+        android:textColor="@color/pureWhite"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/proEmail"
+        android:textColor="@color/pureWhite"
+        android:text="vsnthjeeva@gmail.com"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signed By - "
+            android:textColor="@color/pureWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/proStatus"
+            android:text="Local"
+            android:textColor="@color/pureWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <Button
+            android:id="@+id/proSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:textAllCaps="false"
+            android:background="@drawable/ripple_effect"
+            android:textColor="@color/pureWhite" />
+        <Button
+            android:id="@+id/proEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textAllCaps="false"
+            android:background="@drawable/ripple_effect"
+            android:textColor="@color/pureWhite"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/proCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:background="@drawable/ripple_effect"
+            android:textColor="@color/pureWhite"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

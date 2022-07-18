@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/tabPopular"
+            android:icon="@drawable/ic1"
+            android:title="Popular"/>
+
+    <item android:id="@+id/tabSearch"
+          android:icon="@drawable/ic2"
+          android:title="Search"/>
+
+    <item android:id="@+id/tabFavourites"
+          android:icon="@drawable/ic33"
+          android:title="Favourites"/>
+
+    <item android:id="@+id/tabUpcoming"
+          android:icon="@drawable/ic4"
+          android:title="Upcoming"/>
+</menu>

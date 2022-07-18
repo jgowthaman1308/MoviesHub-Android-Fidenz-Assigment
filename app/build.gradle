@@ -1,0 +1,92 @@
+// Using plugins syntax:
+plugins {
+    id("com.android.application")
+    id("kotlin-android") // Only for Kotlin projects.
+    id("kotlin-kapt") // Only for Kotlin projects.
+    id('com.google.gms.google-services')
+    id("io.objectbox") // Apply last.
+}
+
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.movieshub"
+        minSdkVersion 23
+        targetSdkVersion 32
+        versionCode 8
+        versionName "v1.0.7"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        archivesBaseName = "Anesta-Android-${versionName}_${versionCode}"
+    }
+
+    buildTypes {
+        debug {
+            versionNameSuffix "-debug-anesta"
+        }
+        develop {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            versionNameSuffix "-develop-anesta"
+        }
+        production {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            versionNameSuffix "-production-anesta"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.chibatching.kotpref:kotpref:2.9.1'
+    implementation 'com.google.firebase:firebase-analytics:17.2.1'
+
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    //For Google SignIn
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+
+    //Facebook SignIn
+    implementation 'com.facebook.android:facebook-login:4.42.0'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.andrognito.flashbar:flashbar:1.0.3'
+
+}
+
