@@ -17,12 +17,14 @@
         {
           "id": "2:6708142414026798449",
           "name": "movieOrTvID",
-          "type": 5
+          "type": 5,
+          "flags": 4
         },
         {
           "id": "3:2173497145438019701",
           "name": "isMovie",
-          "type": 1
+          "type": 1,
+          "flags": 4
         }
       ],
       "relations": []

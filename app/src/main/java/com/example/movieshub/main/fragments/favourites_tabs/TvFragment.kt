@@ -29,7 +29,6 @@ import io.objectbox.kotlin.boxFor
 import io.objectbox.kotlin.equal
 import io.objectbox.kotlin.query
 import io.objectbox.query.Query
-import kotlinx.android.synthetic.main.fragment_tv.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
